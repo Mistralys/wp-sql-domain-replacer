@@ -10,9 +10,11 @@ WordPress uses serialized arrays in some database columns, so a simple search & 
 
 ## Usage
 
-Copy the script to the target folder, open it to adjust the configuration, save it and you're good to go.
+[Download the PHP file](https://raw.githubusercontent.com/Mistralys/wp-sql-domain-replacer/master/wp-sql-domain-replacer.php) (right-click > Save as)
 
-You may call it from a browser (if it's accessible in the webserver), or via the command line, like this:
+Move the file to the target folder, edit it to adjust the configuration, save it and you're good to go.
+
+You may call it from a browser (if it's accessible in the webserver), or via the command line, like this (if you have PHP in your path):
 
 ```
 php wp-sql-domain-replacer.php
