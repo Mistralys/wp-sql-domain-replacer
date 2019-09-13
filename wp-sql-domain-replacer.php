@@ -19,12 +19,20 @@
     // CONFIGURATION
     // --------------------------------------------
     
-    $importFile = 'source.sql'; // the dump file to load the SQL from
-    $targetScheme = 'http'; // the HTTP scheme to use for the new domain (http/https)
-    $fromDomain = 'source-domain.com'; // the old domain name to search for
-    $toDomain = 'target-domain.com'; // the new domain name to use
+    // the SQL dump file to process
+    $importFile = 'source.sql'; 
 
+    // the old domain name to search for (without http/https)
+    $fromDomain = 'source-domain.com'; 
     
+    // the HTTP scheme to use for the new domain (http/https)
+    $targetScheme = 'http'; 
+
+    // the new domain name to use
+    // can be "localhost" or an IP address like "127.0.01" for local development
+    $toDomain = 'target-domain.com'; 
+    
+
     // --------------------------------------------
     // DO NOT CHANGE ANYTHING BELOW
     // --------------------------------------------
