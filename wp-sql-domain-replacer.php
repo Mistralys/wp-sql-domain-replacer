@@ -28,8 +28,9 @@
     // the HTTP scheme to use for the new domain (http/https)
     $targetScheme = 'http'; 
 
-    // the new domain name to use
-    // can be "localhost" or an IP address like "127.0.01" for local development
+    // The new domain name to use.
+    // Can be "localhost" or an IP address like "127.0.01" for local development.
+    // A subfolder can also be used, e.g. "domain.com/wp".
     $toDomain = 'target-domain.com'; 
     
 
@@ -45,7 +46,7 @@
         die('ERROR: Input SQL file ['.basename($importFile).'] not found.');
     }
     
-    $outputFile = 'output-'.$toDomain.'.sql';
+    $outputFile = 'output-'.str_replace(array('/', '.'), '_', $toDomain).'.sql';
     
     $searches['http://'.$fromDomain] = $targetScheme.'://'.$toDomain;
     $searches['https://'.$fromDomain] = $targetScheme.'://'.$toDomain;
